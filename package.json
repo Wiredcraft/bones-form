@@ -1,0 +1,8 @@
+{
+    "name": "bones-form",
+    "version": "0.0.1",
+    "main": "./index.js",
+    "dependencies": {
+      "connect": "1.8.x"
+    }
+}
