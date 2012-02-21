@@ -4,5 +4,11 @@
     "main": "./index.js",
     "dependencies": {
       "connect": "1.8.x"
+    },
+    "scripts": {
+      "test": "expresso test/test.js"
+    },
+    "devDependencies": {
+      "bones": "2.0.0"
     }
 }
