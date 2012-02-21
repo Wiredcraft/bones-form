@@ -1,21 +1,22 @@
-#### A Quick Usaged
+s.model = options.model;
+    this.schema.title = 'User Login';
+    this.schema.help = 'Provide your correct account information to login system ';
+    // we must call this to instance schema component..
+    this.prerender(); 
+}
 
->var model = Backbone.Model({
->  name: 'Jackey Chen',
->  mail: 'jackey@wiredcraft.com'
->});
->
->var view = bones.Com({
->  model: model,
->  schema: [
->    {class: "TextField", title: 'Your name:', attributes{name: name}    },
->    {
->      class: "TextField", title: 'Your mail:', attributes{name: mail}, email: true
->    }
->  ],
->  title: 'User Login',
->  help: 'Please provide your account to login our system.',
->});
->
->// Print somewhere.
->return view.render().el;
+  view.prototype.schema = {
+   // items key name should same as model.
+    items:  {
+      name: {
+        'class': 'TextField',
+       validate: function (value) {// validate value when submit form. },
+       value: function () {// you can provide value setter for form from model},
+      }, mail: {
+        'class': 'TextField',
+       validate: function (value) {// validate value when submit form. },
+       value: function () {// you can provide value setter for form from model},
+      }
+    }
+  };
+```javascript
