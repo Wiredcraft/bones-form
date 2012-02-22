@@ -9,6 +9,5 @@
       "test": "expresso test/test.js"
     },
     "devDependencies": {
-      "bones": "2.0.0"
     }
 }
