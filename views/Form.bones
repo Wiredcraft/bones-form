@@ -63,3 +63,4 @@ view.prototype.onSubmit = function (json) {
 view.prototype.onValidate = function (validate) {
   
     }
+    
